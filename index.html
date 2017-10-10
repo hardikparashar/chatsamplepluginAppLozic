@@ -1,0 +1,174 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="foo.css">
+
+</script>
+</head>
+<body>
+<!--
+<div class="container mastercon">
+  <div class="row redund">
+    <div class="col convos">
+      <div class="container convocon">
+		<div class="row convohead">
+			<div class="col convoheadcol"><center><strong style="font-size:25px;color:#3b3a30;">Conversations</strong></center></div>
+		</div>
+		<div class="row convolist">
+		<!-- ----POPULATE ME WITH THE CONVERSATIONS------
+		<div class="col convolistcol">
+		<div class="container rowconvolist" id="convolist">
+		 ---ALL CONVERSATIONS ARE LISTED HERE--- 
+			 
+			<div class="row itemconvo"><div class="col colitemconvo"><p id="username">User Conversation 1</p></div></div>
+			<div class="row itemconvo"><div class="col colitemconvo" id="activeconvo"><p id="username">User Conversation 2</p></div></div>
+			<div class="row itemconvo"><div class="col colitemconvo"><p id="username">User Conversation 3</p></div></div>
+			
+		</div>
+		</div>
+		</div>
+	  </div>
+    </div>
+    <div class="col-9 chat">
+		<div class="container chatcon">
+			<div class="row chathead">
+				<div class="col colchathead">
+				<!-- info about the current chat goes here 
+				<div class="container chatuserinfocontain">
+					<div class="row rowchatuser">	
+						<div class="col colchatimg">
+						<img id = "chatheadimg"src="" height="50px" width="50px" class="rounded"/>
+						</div>
+						<div class="col-10 colchatuserinfo">
+						<h4 id = "chatheadusername"class="otherusername">TestUser</h4><small class="status">Online</small>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="row chatcontents">
+				<div id ="colchatcontents"class="col colchatcontents">
+				    <div id = "defaultchattab" class="defaultchattab"> <center><h5 style="color:black;">CLICK ON A CONVERSATION TO START CHAT</h5></center>
+					</div> -->
+					<!-- 
+					<div class="container chatmessagecontainer">
+						[ ---All the chat messages go here--- ]
+						<div class="row chatmessagerec"><div class="col chatmessagecol">This is my message content </div></div>
+						<div class="row chatmessagesend"><div class="col chatmessagecol">This is my message content</div></div>
+						<div class="row chatmessagerec"><div class="col chatmessagecol">This is my message content</div></div>
+					</div>
+					-->
+				<!--</div>	
+			</div>
+			<div class="row sendmessagerow">
+				<div class="col sendmessagecol">
+				<input name="message" type="text" id="inputtext" class="form-control messagebox" required>
+				<button class="btn btn-dark send" onClick="sendMessage()">Send</button>
+				</div>
+			</div>
+			
+			</div> -->
+		
+	<!--	</div>
+		
+    </div>
+    
+    
+  </div>
+  
+</div>
+
+</div>
+      -->
+<script type="text/javascript">
+	document.getElementById("convolist").innerHtml = "HELLO THERE!";
+   (function(d, m){var s, h;       
+   s = document.createElement("script");
+   s.type = "text/javascript";
+   s.async=true;
+   s.src="https://apps.applozic.com/sidebox.app";
+   h=document.getElementsByTagName('head')[0];
+   h.appendChild(s);
+   window.applozic=m;
+   m.init=function(t){m._globals=t;}})(document, window.applozic || {});
+  
+  var contacts = { "user1": {"userId": "user1", "displayName": "Jamie",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png", // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                          },
+                         "user2": {"userId": "user2", "displayName": "Cersei",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png", // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                         },
+                         "user3": {"userId": "user3", "displayName": "Tyrion",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png",  // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                         }
+                      };
+
+					var contactsJSON = [{"userId": "user1", "displayName": "Jamie",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png", // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                          },
+                         {"userId": "user2", "displayName": "Cersei",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png", // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                         },
+                         {"userId": "user3", "displayName": "Tyrion",
+                          "imageLink": "https://www.applozic.com/resources/images/applozic_icon.png",  // image url (optional)
+                          "imageData" :"Base64 encoded image data"  // or image data (optional)
+                         }
+                      ];
+
+
+	
+  window.applozic.init({
+    appId: "1e06098efcaba991d1d51cf97bfd5ece",      //Get your application key from https://www.applozic.com
+    userId: "hardik",                     //Logged in user's id, a unique identifier for user
+    userName: "hardik",                 //User's display name
+    imageLink : "https://www.applozic.com/resources/images/applozic_icon.png",                     //User's profile picture url
+    email : '',                         //optional
+    contactNumber: '',                  //optional, pass with internationl code eg: +13109097458
+    desktopNotification: true,
+    source: '1',                          // optional, WEB(1),DESKTOP_BROWSER(5), MOBILE_BROWSER(6)
+    notificationIconLink: 'https://www.applozic.com/favicon.ico',    //Icon to show in desktop notification, replace with your icon
+    authenticationTypeId: 1,          //1 for password verification from Applozic server and 0 for access Token verification from your server
+    accessToken: '',                    //optional, leave it blank for testing purpose, read this if you want to add additional security by verifying password from your server https://www.applozic.com/docs/configuration.html#access-token-url
+    locShare: true,
+    googleApiKey: "AIzaSyDKfWHzu9X7Z2hByeW4RRFJrD9SizOzZt4",   // your project google api key 
+    googleMapScriptLoaded : false,   // true if your app already loaded google maps script
+    mapStaticAPIkey: "AIzaSyCWRScTDtbt8tlXDr6hiceCsU83aS2UuZw",
+    autoTypeSearchEnabled : true,     // set to false if you don't want to allow sending message to user who is not in the contact list
+    loadOwnContacts : true, //set to true if you want to populate your own contact list (see Step 4 for reference)
+    olStatus: false,         //set to true for displaying a green dot in chat screen for users who are online
+    onInit : function(response) {
+       if (response === "success") {
+          $applozic.fn.applozic('loadContacts', {"contacts":contactsJSON});
+		  $applozic.fn.applozic('loadTab', user1);
+		  $applozic.fn.applozic('loadTab', user2);
+		  $applozic.fn.applozic('loadTab', user3);
+       } else {
+          // error in user login/register (you can hide chat button or refresh page)
+       }
+   },
+   contactDisplayName: function(otherUserId) {
+         //return the display name of the user from your application code based on userId.
+         return "";
+   },
+   contactDisplayImage: function(otherUserId) {
+         //return the display image url of the user from your application code based on userId.
+         return "";
+   },
+   onTabClicked: function(response) {
+         // write your logic to execute task on tab load
+         //   object response =  {
+         //    tabId : userId or groupId,
+         //    isGroup : 'tab is group or not'
+         //  }
+   }
+  });
+ 
+</script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

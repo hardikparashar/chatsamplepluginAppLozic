@@ -1,0 +1,192 @@
+body
+{
+	background-color:white;
+	
+}
+.mastercon
+{
+	background-color:white;
+	margin-top:10%;
+	height:60% !important;
+	width:70%;
+	
+}
+
+.itemconvoactive p
+{
+	color:white;
+}
+.itemconvoactive p
+{
+	color:black;
+}
+
+
+.redund
+{
+	height:100% !important;
+	width:100% !important;
+}
+.convos, .contacts
+{
+	border:1px solid grey;
+}
+.col-9
+{
+	
+	border:1px solid grey;
+}
+.convos
+{
+	padding: 0 !important;
+}
+.convocon
+{
+	width:100% !important;
+}
+.sendmessagecol
+{
+	width:100%;
+	overflow:hidden;
+	height:100%;
+}
+.send
+{
+	float:right;
+	margin-top:2%;
+	margin-right:15%;
+}
+
+.messagebox
+{
+	margin-top:2%;
+	width:70%;
+	float:left;
+	margin-left:2%;
+}
+.convohead
+{
+	padding:20px;
+	background-color:#eaece5;
+	border-bottom:1px solid grey;
+	height:18% !important;
+}
+.col-10
+{
+	padding:0 !important;
+}
+.col, .col-9
+{
+	padding:0 !important;
+}
+.convolist
+{
+	
+	height:82% !important;
+}
+.rowconvolist
+{
+	overflow:auto;
+}
+.chathead
+{
+	background-color:#eaece5;
+	border-bottom:1px solid grey;
+	height:18% !important;
+}
+.chatcontents
+{
+	border-bottom:1px solid grey;
+	height:60% !important;
+}
+.sendmessagerow
+{
+	border:1px solid grey;
+	height:22% !important;
+}
+.convocon, .convoheadcol, .convolistcol, .rowconvolist, .colitemconvo, .colitemconvoactive, .chatcon, .colchathead, .chatmessagecontainer, .chatmessagecol, .colchatcontents
+{
+	height:100% !important;
+	width:100% !important;
+}
+.chatuserinfocontain
+{
+	height:100%;
+
+}
+.colchatimg
+{
+	padding-left:40px !important;
+	padding-top:7px !important; 
+}
+.colchatimg, .rowchatuser
+{
+	height:100%;
+}
+.colchatuserinfo
+{
+	padding-top:10px !important;
+	padding-right:1px !important;
+	
+	height:100%;
+}
+.defaultchattab
+{
+	padding-top:13% !important;
+	height:100%;
+	width:100%;
+	background-color:white;
+}
+.chatmessagerec
+{
+	background-color:#d3d1d9;
+	border-radius:10px;
+	height:30%;
+	padding:13px;
+	min-width:5% !important;
+	max-width:70% !important;
+	margin-left:2% !important;
+	margin-top:2% !important;
+}
+.chatmessagesend
+{
+	border-radius:10px;
+	padding:13px;
+	min-width:5% !important;
+	max-width:70% !important;
+	height:30%;
+	margin-left:28% !important;
+	margin-top:2% !important;
+	border:1px solid grey;
+}
+.chatmessagecontainer
+{
+	overflow:auto;
+	background-color:white;
+}
+.colitemconvo
+{
+	padding:15px !important;
+	width:100% !important;
+	border-bottom:1px solid grey;
+}
+.colitemconvoactive
+{
+	padding:15px !important;
+	width:100% !important;
+	border-bottom:1px solid grey;
+}
+.itemconvoactive
+{
+	background-color:#6c4e96;
+	height:15%;
+}
+.itemconvo
+{
+	cursor:pointer;
+	height:15%;
+}
+.itemconvo:hover
+{
+	background-color:#d3d1d9;
+}
