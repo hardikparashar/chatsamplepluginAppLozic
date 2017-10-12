@@ -8,7 +8,7 @@ var options = {
 	tooltip:false,
 	movable:false,
 	rotatable:false,
-	transition:false,
+	//transition:false,
 	keyboard:false,
 	
 	viewed:function(e)
