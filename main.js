@@ -1,23 +1,20 @@
 window.onload = function() {
 var Viewer = window.Viewer;
 var options = {
-	navbar:false
+	navbar:false,
 	title:false,
 	toolbar:false,
 	movable:false,
 	tooltip:false,
 	movable:false,
-	zoomable:false,
-	rotatble:false,
-	scalable:false,
+	rotatable:false,
 	transition:false,
-	fullscreen:false,
-	keyboard:false
+	keyboard:false,
 	
-	viewed:function()
+	viewed:function(e)
 	{
-		
+		console.log(e.type);
 	}
 };
-var viewer = new Viewer(document.getElementById("image"),options);
-}
+var viewer = new Viewer(document.getElementById('image'), options);
+};
